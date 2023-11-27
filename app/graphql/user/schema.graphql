@@ -1,0 +1,71 @@
+type Login {
+    success: Boolean!
+    message: String!
+    token: String
+    retoken: String
+    data: User
+}
+
+type User {
+    name: String
+    password: String
+    mobile: String
+}
+
+type UserInfo {
+  name: String
+  imageUrl: String
+  sex: Int
+  wechat: String
+  dsc: String
+  email: String
+}
+
+type CreateAccount {
+    status: String!
+    msg: String!
+    token: String
+    retoken: String
+    data: Account
+}
+
+type Account {
+    name: String
+    password: String
+    email: String
+    mobile: String
+}
+
+type Logout {
+    status: String!
+    msg: String!
+}
+
+type ChangeUser {
+  name: String
+  imageUrl: String
+  sex: Int
+  wechat: String
+  dsc: String
+}
+
+type AccountCancellation {
+    status: String!
+    msg: String!
+}
+
+type SendResetPassword {
+    success: Boolean!
+    message: String!
+}
+
+
+type VerifyResetPassword {
+    success: Boolean!
+    message: String!
+}
+
+type ResetPassword {
+    success: Boolean!
+    message: String!
+}

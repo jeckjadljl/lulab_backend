@@ -1,0 +1,4 @@
+type Category {
+  _id:String,
+  title: String,
+}

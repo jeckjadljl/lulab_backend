@@ -1,0 +1,13 @@
+type Mutation {
+     createAccount(mobile: String!, area:String!, password: String!): CreateAccount!
+     passwordLogin(mobile: String! ,area: String! ,password: String!): Login!
+     sendResetPasswordCode(mobile:String!, area:String!): SendResetPassword!
+     verifyResetPasswordCode(mobile: String!, area: String!, code: String!): VerifyResetPassword!
+     resetPassword(mobile: String!, area: String!, password: String!): ResetPassword!
+     changeUserInfo(name: String!, sex: Int!, dsc: String!, email: String!): ChangeUser!
+
+     #email
+     sendEmail(email: String!): EmailResponse!
+     checkEmail(email: String!, code: String!): verifyCheckemail!
+     resendCode(email: String!): ReSendCode!
+}

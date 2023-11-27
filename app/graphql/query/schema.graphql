@@ -1,0 +1,16 @@
+type Query {
+   #user
+
+   userInfo: UserInfo!
+   logOut: Logout!
+   accountCancellation(mobile: String!, area: String!): AccountCancellation!
+
+   #课程请求
+   courseCategory: [Category!]
+
+   reToken(token: String!): Token!
+
+   #手机验证码
+   verifySend(mobile: String! ,area:String!): Res!
+   verifyCheck(mobile: String! ,code: String! ,area: String!): verifyCheckmobile!
+}
